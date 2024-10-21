@@ -1,0 +1,23 @@
+/* Set the background color for the entire page */
+body {
+    background-color: hotpink;
+}
+
+/* Center align the text for elements with the 'heading' class */
+.heading {
+    text-align: center;
+}
+
+/* Style list items to have spacing and a larger font size; make them inline for horizontal display */
+li {
+    margin: 14px; /* Space around each list item */
+    font-size: 20px; /* Increase the font size for readability */
+    display: inline-block; /* Display list items in a row */
+}
+
+/* Style the navigation links with a solid pink border and antiquewhite text color */
+.nav-link {
+    border: pink; /* Border color for the links */
+    border: solid; /* Solid line for the border */
+    color: antiquewhite; /* Set the text color to antiquewhite */
+}
