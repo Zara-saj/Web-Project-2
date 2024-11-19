@@ -1,9 +1,9 @@
 <!--
-Name:zara sajjadieh
-Course:Web Development
-Teacher:Ms.Hoitink
-school:Pembina trails colligiate
-Date last Modified: 21oct2024
+Name: Zara Sajjadieh
+Course: Web Development
+Teacher: Ms. Hoitink
+School: Pembina Trails Collegiate
+Date Last Modified: 14 Nov 2024
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,76 +16,63 @@ Date last Modified: 21oct2024
 
     <!-- Internal CSS for styling -->
     <style>
-        p {
-            font-size: 25px;
-        }
+            /* Styling for content sections */
+    .section {
+        margin: 0 50px; /* Left and right margins for spacing */
+        border: 1px dotted #835e3c; /* Dotted border with brown color */
+        padding: 20px; /* Adds padding inside each section */
+        line-height: 1.6; /* Spacing between lines for readability */
+    }
 
-        h1 {
-            font-size: 50px;
-        }
+     /* Flexbox for image container to align images side-by-side */
+    .images-container {
+        display: flex; /* Horizontal alignment of images */
+        justify-content: space-between; /* Space images evenly */
+        align-items: center; /* Align images vertically centered */
+        gap: 20px; /* Space between images */
+        padding: 20px; /* Adds padding around the image container */
+    }
 
-        .section {
-            margin-left: 50px;
-            margin-right: 50px;
-            border-style: dotted;
-        }
-
-        .images-container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+    #lake-highlight {
+        font-weight: bold; /* Makes the text bold */
+        color: #835e3c; /* Adds a matching theme color */
+    }
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <div style="background-color: indianred;">
+        <div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donation.html">Sign in to donate</a></li>
+                    <li><a href="information.html">About us</a></li>
                 </ul>
             </nav>
         </div>
-        <h1 class="heading">Treaty 5</h1>
+        <h1>Treaty 5</h1> <!-- Main heading/title of the page -->
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <!-- Section for Treaty 5 Location -->
-        <section style="background-color: palevioletred;" class="section">
+        <!-- Section 1: Treaty 5 Location -->
+        <section class="section">
             <h3>Where was Treaty 5 negotiated?</h3>
-            <p>The Treaty 5 was negotiated near <span style="color: rgb(144, 22, 144); font-weight: bold;">Lake Winnipeg</span>
-                in the District of Keewatin.
-            </p>
+            <p>The Treaty 5 was negotiated near <span id="lake-highlight">Lake Winnipeg</span> in the District of Keewatin.</p>
         </section>
 
-        <br>
-
-        <!-- Image Section with Maps -->
-        <div class="images-container section">
-            <figure>
-                <img src="images/teaty-5-big-map.webp" style="width: 300px; height:300px" id="img-loc" /><br>
-                <a href="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/6255968/nt1-5_e_1_.jpg">Image source</a>
-                <figcaption>
-                    <p><i>This map is the map of Treaty 5 in Canada.</i></p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/treaty-5-map.jpg" style="width: 300px; height:300px" id="img-loc" /><br>
-                <a href="https://th.bing.com/th/id/R.b729109370df432c93a06d42c9afd0cd?rik=xavrE9T8ol543A&riu=http%3a%2f%2fwww.slcn.ca%2fwp-content%2fuploads%2f2020%2f01%2ftreaty-5-map.jpg&ehk=0x88FlCbKCXFG8%2bXNyWLVs7UBHrj%2bqybjKG%2f72jYWbs%3d&risl=&pid=ImgRaw&r=0">Image source</a>
-                <figcaption>
-                    <p style="text-align: right;"><i>This map is the map of Treaty 5 in Manitoba.</i></p>
-                </figcaption>
-            </figure>
-        </div><br>
-
-        <!-- Detailed Information Section -->
-        <section style="background-color: palevioletred;" class="section">
+        <!-- Section 2: Details of Treaty 5 -->
+        <section class="section">
             <h2>Details of Treaty 5</h2>
+            
+            <!-- Subsection 1: Communities Involved -->
             <h3>1. Communities Involved and Their Backgrounds</h3>
-            <p>Treaty 5 was an agreement between the Canadian government, the Ojibwe people, and the Swampy Cree of Lake Winnipeg. It included lands in central and northern Manitoba, and parts of Saskatchewan and Ontario. The Norway House band, as well as communities like Berens River, Fisher River, and different Cree groups (from Cross Lake, Oxford House, and The Pas), were also part of the treaty. More communities joined between 1907 and 1910.</p>
+            <p>Treaty 5 was an agreement between the Canadian government, the Ojibwe people, and the Swampy Cree of Lake Winnipeg. 
+                It included lands in central and northern Manitoba, and parts of Saskatchewan and Ontario.</p>
 
+            <!-- Subsection 2: Main Terms of Treaty 5 -->
             <h3>2. Main Terms of Treaty 5</h3>
             <ul>
                 <li><strong>One-time payment:</strong> $5 per person when signing the treaty (compared to $12 in Treaties 3 and 4).</li>
@@ -93,34 +80,54 @@ Date last Modified: 21oct2024
                 <li><strong>Yearly payments:</strong> $5 per person, $15 for each headman, and $25 for each chief.</li>
                 <li><strong>Extra items:</strong> Tools, ammunition, twine, flags, clothing, and medals were also given.</li>
             </ul>
-
+            
+            <!-- Subsection 3: Additional Promises and Land Issues -->
             <h3>3. Additional Promises and Land Issues</h3>
-            <p>Besides the treaty terms, other promises were made, such as offering new reserves for those who moved. For example, Norway House band members were relocated to Fisher River, and $500 was provided to help some groups, like those in Grand Rapids, with moving costs. However, there were challenges in managing these promises, including confusion about reserve boundaries and requests for more or different land.</p>
+            <p>Besides the treaty terms, other promises were made, such as offering new reserves for those who moved. Norway House band members 
+                were relocated to Fisher River, and $500 was provided to help.</p>
 
+            <!-- Subsection 4: Comparison with Other Treaties -->
             <h3>4. Differences Between Treaty 5 and Other Treaties in Canada</h3>
             <ul>
-                <li><strong>Less Generous Terms:</strong> Treaty 5 offered less money and land than Treaties 3 and 4. The one-time payment was $5, which was lower than the earlier treaties, and the land provided was also less.</li>
-                <li><strong>Government Reluctance:</strong> The government was initially reluctant to negotiate Treaty 5 because they had already secured more valuable farmland through Treaties 1 to 4. The main aim was to open up the Lake Winnipeg area for transportation and resource extraction rather than agriculture.</li>
-                <li><strong>Later Inclusion of Northern Communities:</strong> Many northern Indigenous communities were only included from 1907 to 1910, as the government aimed to secure land for building railways and accessing resources.</li>
+                <li><strong>Less Generous Terms:</strong> Treaty 5 offered less money and land than Treaties 3 and 4.</li>
+                <li><strong>Government Reluctance:</strong> Initially reluctant to negotiate Treaty 5 due to existing farmlands from earlier 
+                    treaties.</li>
+                <li><strong>Later Inclusion:</strong> Northern Indigenous communities were only included from 1907 to 1910.</li>
             </ul>
 
+            <!-- Subsection 5: Current Relevance of Treaty 5 -->
             <h3>5. Treaty 5 Today</h3>
-            <p>
-                Today, the terms of Treaty 5 still shape the lives of Indigenous communities, particularly in relation to land rights and resource management. 
-                <ul>
-                    <li><strong>Economic Development:</strong> While there isn't a single organization representing all Treaty 5 communities, some are part of the Nishnawbe Aski Nation (NAN). NAN focuses on protecting treaty rights, pursuing self-government, and supporting economic and cultural development.</li>
-                    <li><strong>Ongoing Issues:</strong> Many communities continue to face challenges related to the management of reserve boundaries and promises that were not fully met. These issues have had long-term effects on Indigenous livelihoods and land use.</li>
-                </ul>
-            </p>
-        </section><br>
+            <p>The terms of Treaty 5 continue to shape Indigenous land rights and resource management in Canada.</p>
+        </section>
 
-        <!-- Sources Section -->
-        <footer style="background-color: rgb(255, 0, 102);" class="section">
-            <p>For more information, visit:</p>
-            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-5">Main source</a> | 
-            <a href="https://www.treaty5.com/story-of-treaty-5-1875-the-winnipeg-treaty">Side source</a>
+        <!-- Image Section with Maps of Treaty 5 -->
+        <div class="images-container section">
+            <!-- First Map Image -->
+            <figure>
+                <img src="images/teaty-5-big-map.webp" style="width: 300px; height:300px" alt="Map of Treaty 5 in Canada" />
+                <figcaption>
+                    Map of Treaty 5 in Canada.
+                    <a href="https://th.bing.com/th/id/R.b729109370df432c93a06d42c9afd0cd?rik=xavrE9T8ol543A&riu=http%3a%2f%2fwww.slcn.
+                    ca%2fwp-content%2fuploads%2f2020%2f01%2ftreaty-5-map.jpg&ehk=0x88FlCbKCXFG8%2bXNyWLVs7UBHrj%2bqybjKG%2f72jYWbs%3d&risl=
+                    &pid=ImgRaw&r=0">Source for the image</a>
+                </figcaption>
+            </figure>
+            <!-- Second Map Image -->
+            <figure>
+                <img src="images/treaty-5-map.jpg" style="width: 300px; height:300px" alt="Map of Treaty 5 in Manitoba" />
+                <figcaption>
+                    Map of Treaty 5 in Manitoba.
+                    <a href="https://i1.wp.com/www.seankheraj.com/wp-content/uploads/2010/09/Treaties1-5.jpg">Source for the image</a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Footer with Source Information -->
+        <footer>
+            <p>For more information visit:</p>
+            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-5">Source: The Canadian Encyclopedia</a>
         </footer>
     </main>
 </body>
-</html>
 
+</html>

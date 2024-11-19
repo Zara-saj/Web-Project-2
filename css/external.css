@@ -1,23 +1,173 @@
-/* Set the background color for the entire page */
+/*
+Color Family: Analogous
+Primary color:#835e3c
+Accent color:#8e5f46
+Neutral color:#F5E6CC, 000000
+The color palette for the website is designed to create a warm and welcoming look. The primary color, `#835e3c`, is a brown shade that gives a 
+feeling of stability and warmth. The accent color, `#8e5f46`, is a darker brown used to highlight important parts like buttons or links, adding 
+contrast without being too bold. The neutral color, `#F5E6CC`, is a soft beige that acts as a calm background, making the text easy to read. 
+The black color, `#000000`, is used for text to provide a strong contrast and ensure it stands out. Together, these colors create a clean, 
+balanced, and professional look for the website.
+*/
+/* Box-sizing for consistent padding and margin behavior */
+* {
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
 body {
-    background-color: hotpink;
+    margin: 0; /* Remove default margin */
+    background-color: #F5E6CC; /* Set background color */
 }
 
-/* Center align the text for elements with the 'heading' class */
-.heading {
-    text-align: center;
+/* Styling for the header section */
+header {
+    text-align: center; /* Center-aligns text within header */
+    padding: 20px; /* Adds padding around the header */
 }
 
-/* Style list items to have spacing and a larger font size; make them inline for horizontal display */
-li {
-    margin: 14px; /* Space around each list item */
-    font-size: 20px; /* Increase the font size for readability */
-    display: inline-block; /* Display list items in a row */
+/* Navigation bar styling */
+nav {
+    background-color: #835e3c; /* Set the background color for the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align nav content horizontally */
+    align-items: center; /* Center-align nav content vertically */
+    padding: 10px; /* Add padding inside the nav */
+    margin: 0; /* Remove extra margins */
 }
 
-/* Style the navigation links with a solid pink border and antiquewhite text color */
-.nav-link {
-    border: pink; /* Border color for the links */
-    border: solid; /* Solid line for the border */
-    color: antiquewhite; /* Set the text color to antiquewhite */
+/* Unordered list in navigation */
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align list items horizontally */
+    gap: 20px; /* Add spacing between list items */
 }
+
+/* Navigation links */
+nav a {
+    background-color: #8e5f46; /* Set background color for links */
+    color: #F5E6CC; /* Set text color */
+    padding: 15px 30px; /* Add padding around text */
+    text-decoration: none; /* Remove underline from links */
+    border: 3px solid #F5E6CC; /* Add border around links */
+    border-radius: 5px; /* Slight rounding of corners */
+    display: block; /* Make links block-level for consistent spacing */
+    font-size: 18px; /* Adjust font size */
+    text-align: center; /* Center text in links */
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: #A5693D; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* List items in navigation */
+nav li {
+    font-size: 20px; /* Increase font size for readability */
+}
+
+/* Heading styles for h1 */
+h1 {
+    font-size: 50px; /* Larger font size for the main title */
+    font-weight: bold; /* Make the text bold */
+    color: #835e3c; /* Match header text with the navbar theme */
+    margin-top: 20px; /* Add spacing above the title */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        gap: 10px; /* Adjust spacing between items */
+    }
+}
+
+/* Reset box-sizing to include padding and border in elements' width and height */
+* {
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Sets font for the entire document */
+}
+
+/* Basic styling for body */
+body {
+    margin: 0; /* Remove default margin */
+    background-color: #F5E6CC; /* Light beige background color */
+    color: black; /* Standard black text color */
+}
+
+/* Navigation bar (nav) styling */
+nav {
+    background-color: #835e3c; /* Brownish background color */
+    height: 200px; /* Fixed height */
+    margin: 10px; /* Spacing around the navigation bar */
+    padding: 10px; /* Inner padding within nav */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-aligns nav content horizontally */
+    align-items: center; /* Center-aligns nav content vertically */
+}
+
+/* Styling for navigation list items */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns list items horizontally */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+/* Individual navigation item styling */
+nav li {
+    margin: 0 15px; /* Adds spacing between nav items */
+    font-size: 20px; /* Increases font size for readability */
+}
+
+/* Links within navigation */
+nav a {
+    color: #F5E6CC; /* Light beige color for link text */
+    text-decoration: none; /* Removes underline from links */
+    padding: 15px; /* Adds padding around link text */
+    border: 3px solid #F5E6CC; /* Light beige border around links */
+    background-color: #8e5f46; /* Slightly darker brown for links */
+    text-align: center; /* Centers link text */
+    display: inline-block; /* Makes link behave like a block element */
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #A5693D; /* Darker shade of brown on hover */
+}
+
+/* Headings within sections */
+h2, h3 {
+    font-weight: bold; /* Makes headings bold */
+    color: #835e3c; /* Brown color to match theme */
+}
+
+/* Standard font size for paragraphs */
+p {
+    font-size: 18px; /* Slightly larger font for readability */
+}
+
+/* Center-align figures within image container */
+figure {
+    text-align: center; /* Centers figure content (image and caption) */
+}
+
+/* Styling for captions under images */
+figcaption {
+    font-size: 16px; /* Smaller font size for caption */
+    font-style: italic; /* Italic style for captions */
+}
+
+/* Footer styling for source information */
+footer {
+    text-align: center; /* Center-aligns text in footer */
+    padding: 20px; /* Adds padding around footer */
+    font-size: 16px; /* Font size for readability */
+    border-top: 1px solid #835e3c; /* Top border to separate footer */
+    margin-top: 20px; /* Margin above footer for spacing */
+}
+
+
